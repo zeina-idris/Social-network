@@ -1,0 +1,678 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: 'Overlock', cursive;
+}
+
+#container{
+    text-align: center;
+    margin: auto;
+    overflow-x: hidden;
+    margin-top: 80px;
+    z-index: -1;
+    
+}
+
+#welcome-cc{
+    z-index: 9999;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/friends-group.jpeg');
+    background-size: cover;
+    text-align: center;
+
+}
+
+#welcome-c{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999999;
+}
+
+
+
+#welcome-c .logo{
+    width: auto;
+    height: 60px;
+    background-color: #2B2B37;
+    margin: auto;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.input{
+    display: flex;
+    line-height: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: thin solid grey;
+    text-align: center;
+    align-items: baseline;
+    width: 300px;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+button{
+    cursor: pointer;
+}
+
+.reg-btn{
+    background-color: #0E0B16;
+    color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+
+#home-c .logo{
+    width: auto;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    z-index: 999999999;
+    margin: auto;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Josefin Slab', serif;
+    overflow-x: hidden;
+
+}
+
+
+#navtop{
+    height: 65px;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    background-color: #2B2B37;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    margin: 0 auto;
+    padding: 20px;
+    margin-right: 130px;
+
+}
+
+
+.headername{
+    margin: auto;
+    color: white;
+    position: relative;
+    left: 90%;
+    margin-left: 40px;
+    padding: 15px;
+
+}
+
+.logout{
+    height: 35px;
+    width: auto;
+    text-decoration: none;
+}
+
+.friendslist{
+    text-decoration: none;
+    color: white;
+    border-right: solid thin lightgrey;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+.friendslist:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.friend-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    border-right: solid thin lightgrey;
+    padding-right: 10px;
+}
+.friend-link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.chat-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    border-right: solid thin lightgrey;
+    padding-right: 10px;
+}
+
+.chat-link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.profile-link{
+    margin-right: 15px;
+    border-right: solid thin lightgrey;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.profile-link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.requests{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.requests:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#navtop #profilepic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 5px;
+    position: relative;
+    left: 90%;
+}
+
+
+#profile #profilepic{
+    width: 200px;
+    height: 200px;
+    border: solid 4px white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 3px grey;
+    position: relative;
+    background-color: white;
+    object-fit: cover;
+    top: 185px;
+    left: 40%;
+}
+
+#profile .fname{
+    position: relative;
+    left: 45%;
+    margin-top: 195px;
+    width: auto;
+    color: black;
+}
+
+
+.pen{
+    width: 20px;
+    height: auto;
+}
+
+#upload{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999999;
+}
+
+#upload-c{
+    position:absolute;
+    top:50%;
+    left:38%;
+    margin-left: -50px;
+    margin-top:-200px;
+    width:500px;
+    height:250px;
+    border: solid 1px black;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 999999;
+    background-color: #36454f;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+#X{
+    position: relative;
+    margin-top:  10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+    right: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.upload-btn{
+    border: solid 1px grey;
+    width: 150px;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 15px;
+    height: auto;
+    cursor: pointer;
+}
+.upload-btn1{
+    width: 70px;
+    margin: auto;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid thin white;
+    color: white;
+}
+.upload-btn1:hover{
+    border: 3px dotted white;
+	color: white;
+	background: rgba(0,0,0,0);
+}
+
+
+#upload-c input[type=file]{
+    position: relative;
+    visibility: hidden;
+}
+
+.user_img{
+    width: 200px;
+    height: 200px;
+    border: solid 4px white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 3px grey;
+    position: relative;
+    background-color: white;
+    object-fit: cover;
+    top: 185px;
+    left: 40%;
+}
+
+
+#profileContainer{
+    display: block;
+    margin: 0 auto;
+    border: solid 1px lightgrey;
+    border-radius: 7px;
+    height: 500px;
+    width: 900px;
+    padding: 10px;
+    margin-left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#profile{
+    top: 15%;
+    margin: 0 auto;
+    width: 900px;
+    height: 350px;
+    background-image: url('/public/images/barfriends.jpg');
+    background-position: bottom;
+    background-size: cover;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+
+#user_c{
+    top: 15%;
+    margin: 0 auto;
+    width: 900px;
+    height: 350px;
+    background-image: url('/public/images/remote.jpej.png');
+    background-position: center;
+    background-size: cover;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+#user_c h2{
+    position: relative;
+    left: 45%;
+    margin-top: 195px;
+    max-width: 300px;
+    color: black;
+}
+
+
+
+#user_c .userbio{
+    position: relative;
+    top: -140px;
+    margin-left: 100px;
+    z-index: -1;
+    border: solid 1px lightgray;
+    width: 900px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.userbio h3{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 375px;
+
+}
+
+.friend_button{
+    width: auto;
+    height: 25px;
+    position: relative;
+    border-radius: 5px;
+    border: thin solid grey;
+    background-color: white;
+    left: 75%;
+    top: -330px;
+    font-size: 15px;
+}
+
+
+#friends-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: solid 1px lightgrey;
+    border-radius: 7px;
+    height: 500px;
+    width: 900px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+#userprofile #friend-pic{
+    width: 100px;
+    height: 98px;
+    object-fit: cover;
+}
+
+.friends-small{
+    height: 100px;
+    width: 400px;
+    border: solid thin grey;
+    margin: 5px 5px 4px 5px;
+}
+
+#userprofile p{
+    position: relative;
+    left: 40%;
+    top: -95px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Editbio{
+    position: relative;
+    left: 80%;
+    top: -130px;
+    width: 100px;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    cursor: pointer;
+}
+
+
+.textarea{
+    position: relative;
+    left: 75%;
+    top: -340px;
+    resize: none;
+    width: 200px;
+    height: 45px;
+}
+
+.bio-btn{
+    position: relative;
+    left: 65%;
+    top: -325px;
+}
+
+#profile .bio{
+    position: relative;
+    top: -140px;
+    left: -11px;
+    z-index: -1;
+    border: solid 1px gray;
+    width: 900px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#profile .biotext{
+    position: absolute;
+    top: 85px;
+    left: 35%;
+}
+
+
+.flex-button{
+    position: relative;
+    top: -90px;
+    left: 40%;
+}
+
+
+/*CHAT COMPONENT*/
+#chat-container{
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    top: 50px;
+    margin: auto;
+    border: solid 1px lightgrey;
+    height: 500px;
+    width: 900px;
+    overflow-y: scroll;
+    background-image: url('./images/bundle.jpeg');
+    background-blend-mode: overlay;
+}
+
+
+
+
+#chitchat textarea{
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 49px;
+    border-radius: 6px;
+    resize: none;
+    height: 35px;
+    width: 900px;
+    border: solid thin lightgrey;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.time{
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+#chitchat .messenger{
+    border: none;
+    border-radius: 5px;
+    width: 900px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    padding-top: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #2B2B37;
+    color: white;
+    font-size: 25px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Josefin Slab', serif;
+}
+
+
+
+.message-container.message.my-special-class{
+    padding-left: 10px;
+    max-width: auto;
+    height: 70px;
+    text-align: right;
+}
+
+.message{
+    height: auto;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+
+.message.my-special-class{
+    background-color: #36454f;
+    color: white;
+    text-align: left;
+    margin-left: 55%;
+    padding: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.message.dubees{
+    background-color: #437E6C;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*ONLINE USERS COMPONENT*/
+.onlineusers{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    border: solid 1px lightgrey;
+    width: 900px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+
+
+.friends-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    border: solid 1px lightgrey;
+    border-radius: 9px;
+    height: 500px;
+    width: 900px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#userprofile #friend-pic{
+    width: 100px;
+    height: 98px;
+    object-fit: cover;
+}
+
+.friends-small{
+    height: 100px;
+    width: 400px;
+    margin-bottom: 0;
+    border: solid thin lightgrey;
+    margin: 5px 5px 4px 5px;
+}
+
+#userprofile p{
+    position: relative;
+    left: 40%;
+    top: -95px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.f-requests{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    border: solid 1px lightgrey;
+    width: 900px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.friends {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    border: solid 1px lightgrey;
+    width: 900px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+
+i.fa.fa-sign-out::before{
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+
+}
+
+
+.no-friends-requests{
+    text-align: center;
+    margin-top: 50px;
+}
